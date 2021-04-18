@@ -1,2 +1,2 @@
 # Web-site
- site responsiovo
+ site responsivo
