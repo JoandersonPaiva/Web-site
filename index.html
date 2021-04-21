@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Desafio</title>
+</head>
+<body>
+    <div class="container">
+        <header class="cabecalho">
+            <p class="longa">Projeto Seletivo Labenu</p>
+            <p class="curta">Labenu</p>
+        </header>
+        <main class="layout">
+            <img src="imagens/labenu.png" alt="Ladenu" class="princ">
+            <img src="imagens/layout.png" alt="ladenu" class="alter">
+        </main>
+        
+        <aside class="esquerda">
+
+        </aside>
+        <div class="bt1">
+            <button class="butao prim">Mobile Fontend</button>
+        </div>
+        <div class="bt2">
+            <button class="butao seg">Data Science</button>
+        </div>
+        <div class="bt3">
+            <button class="butao ter">Web Full Stack</button>
+        </div>
+        <aside class="direita">
+
+        </aside>
+        <footer class="rodape">
+            <form>
+                <input type="email" name="email" id="email" placeholder="Coloque seu e-mail para contato" required><button type="submit" class="enviar" onclick="verificar()">Enviar</button>
+            </form>
+        </footer>
+    </div>
+    <script>
+        function verificar() {
+            var email = document.getElementById("email").value
+            if(email.indexOf('@') > 0) {
+                var msg = alert(`O email '${email}' foi cadastrado`)
+                return msg
+            }
+        }
+    </script>
+</body>
+</html>
